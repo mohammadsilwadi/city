@@ -26,15 +26,11 @@ export class App extends Component {
     })
     console.log(this.state.cityName);
   }
-
   submitHandler=(e)=>{
     e.preventDefault();
     let url=`https://eu1.locationiq.com/v1/search.php?key=pk.eaa9c7c720c670657b70074230df20d9&q=${this.state.cityName}&format=json`
-   
-   
     axios.get(url).then(res=>{
       let data= res.data[0];
-
       this.setState({
         cityName:data.display_name,
         // mapData:mapURL,
