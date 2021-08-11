@@ -9,7 +9,7 @@ export class City extends Component {
             
                 <Row>
                   <Col xs={6} md={4}>
-                  <h1>{this.props.cityName}</h1>
+                  <h2>{this.props.cityName}</h2>
                 <h2>{this.props.lat}</h2>
                 <h2>{this.props.lon}</h2>
                   </Col>
